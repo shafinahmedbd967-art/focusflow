@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FocusFlow Next-Gen Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+
+<!-- 3D Particles Canvas -->
+<canvas id="particles"></canvas>
+
+<!-- Main UI -->
+<div class="main" id="mainUI">
+
+  <!-- Clock & Date -->
+  <div class="clock-box">
+    <h1 id="clock"></h1>
+    <p id="date"></p>
+  </div>
+
+  <!-- Theme Selector -->
+  <div class="theme-selector">
+    <label for="themeSelect">Theme:</label>
+    <select id="themeSelect">
+      <option value="auto">Auto</option>
+      <option value="ocean">Ocean</option>
+      <option value="forest">Forest</option>
+      <option value="sunset">Sunset</option>
+      <option value="midnight">Midnight</option>
+    </select>
+  </div>
+
+  <!-- Quotes -->
+  <div class="quote-box">
+    <p id="quote"></p>
+  </div>
+
+  <!-- Pomodoro Timer -->
+  <div class="pomodoro">
+    <svg width="220" height="220">
+      <circle cx="110" cy="110" r="100" stroke="#444" stroke-width="10" fill="none"/>
+      <circle id="progress" cx="110" cy="110" r="100" stroke="#4CAF50" stroke-width="10" fill="none"
+              stroke-dasharray="628" stroke-dashoffset="628"/>
+    </svg>
+    <div class="time">
+      <span id="minutes">25</span>:<span id="seconds">00</span>
+    </div>
+  </div>
+
+  <!-- Pomodoro Controls -->
+  <div class="controls">
+    <button id="startBtn">Start</button>
+    <button id="stopBtn">Stop</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <!-- Ambient Sound Controls -->
+  <div class="sound">
+    <button id="rain">Rain</button>
+    <button id="forest">Forest</button>
+    <button id="stopSound">Stop</button>
+  </div>
+
+  <!-- Focus Stats -->
+  <div class="stats">
+    <h3>Focus Sessions</h3>
+    <p id="sessionCount">0</p>
+    <h3>Focus Streak</h3>
+    <p id="streakCount">0 🔥</p>
+  </div>
+
+  <!-- Heatmap -->
+  <div class="heatmap">
+    <h3>Focus Activity</h3>
+    <div id="heatmapGrid"></div>
+  </div>
+
+  <!-- Achievements / Badges -->
+  <div class="achievements">
+    <h3>Achievements</h3>
+    <div id="badgeGrid"></div>
+  </div>
+
+  <!-- AI Motivational Coach -->
+  <div class="ai-coach">
+    <h3>Coach</h3>
+    <p id="aiMessage">Keep focusing and boost your productivity!</p>
+  </div>
+
+  <!-- Analytics / Charts -->
+  <div class="analytics">
+    <h3>Focus Analytics</h3>
+    <canvas id="sessionsChart"></canvas>
+    <canvas id="scoreChart"></canvas>
+  </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="js/quotes.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/app.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/stats.js"></script>
+<script src="js/aiCoach.js"></script>
+<script src="js/analytics.js"></script>
+<script src="js/achievements.js"></script>
+
+</body>
+</html>

@@ -84,6 +84,7 @@ focusflow/
 │   ├── timer.js
 │   ├── quotes.js
 │   ├── stats.js
+|   ├── analytics.js
 │   ├── achievements.js
 │   ├── aiCoach.js
 │   └── galaxy3D.js

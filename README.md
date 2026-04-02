@@ -5,10 +5,6 @@ FocusFlow is a minimal, distraction-free productivity web application designed t
 It combines a Pomodoro focus timer, calming ambient sounds, interactive galaxy background, and productivity analytics to create a relaxing yet powerful focus environment.
 
 ---
-## 🚀 Live Demo
-
-👉 https://shafinahmedbd967-art.github.io/focusflow
-
 ## ✨ Features
 
 ### ⏰ Real-Time Clock
